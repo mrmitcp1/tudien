@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h2>tu dien anh viet</h2>
+<input type="text"  id="text">
+<button onclick="dich()">check</button>
+<p id="result"></p>
+<body>
+<script>
+
+    function dich() {
+        let arr1 = ['dog', 'cat', 'mouse', 'lion', 'fish',];
+        let arr2 = ['cho', 'meo', 'chuot', 'su tu', 'ca'];
+        let text = document.getElementById('text').value
+
+        if (arr1.indexOf(text) === -1) {
+            document.getElementById('result').innerHTML = "Khong co trong tu dien"
+        } else {
+            document.getElementById('result').innerHTML = arr2[arr1.indexOf(text)];
+        }
+
+
+    }
+</script>
+</body>
+</html>
